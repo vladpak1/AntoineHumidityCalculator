@@ -1,0 +1,35 @@
+{
+  "name": "vladpak1/antoinehumiditycalculator",
+  "description": "A simple PHP library for calculating the Antoine equation for water vapor pressure and relative humidity.",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Vlad Pak",
+      "homepage": "https://github.com/vladpak1"
+    }
+  ],
+  "require": {
+    "php": "^8.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "vladpak1\\AntoineHumidityCalculator\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "vladpak1\\AntoineHumidityCalculator\\Tests\\": "tests/"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^10.3",
+    "friendsofphp/php-cs-fixer": "^3.26"
+  },
+  "scripts": {
+    "coverage": "XDEBUG_MODE=coverage vendor/bin/phpunit --coverage-clover clover.xml",
+    "coverage-win": "set \"XDEBUG_MODE=coverage\" && \"vendor\\bin\\phpunit\" --coverage-clover clover.xml",
+    "fix": "\"vendor/bin/php-cs-fixer\" fix --diff --allow-risky=yes --using-cache=no",
+    "test": "\"vendor/bin/phpunit\" --random-order"
+  }
+}
