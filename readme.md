@@ -5,7 +5,7 @@ This package provides a simple calculator model for determining the saturation p
 ## Installation using Composer
 
 ```bash
-composer require vladpak1/antoine-humidity-calculator
+composer require vladpak1/antoinehumiditycalculator
 ```
 
 ## Description
